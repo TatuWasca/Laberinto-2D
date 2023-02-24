@@ -276,8 +276,7 @@ class Game:
             if tile_object.name == 'exit':
                 self.exitspawns.append([tile_object.x, tile_object.y])   
             if tile_object.name == 'mob':
-                #Mob(self, tile_object.x / 32, tile_object.y/ 32)
-                pass
+                Mob(self, tile_object.x / 32, tile_object.y/ 32)
             if tile_object.name == 'wall':
                 Obstacle(self, tile_object.x, tile_object.y, tile_object.width, tile_object.height)
 
